@@ -6,15 +6,16 @@
 
 ## Description
 
-_Demonstrates API building process by creating two databases, one for dogs and one for cats, seeding the data and providing routes To create, read, update and delete entries.
+_Demonstrates API building process by creating two databases, one for dogs and one for cats, seeding the data and providing routes To create, read, update and delete entries._
 
 ## Cat Http Request
+```
 _GET /api/cats_
 _POST /api/cats_
 _GET /api/cats/{id}_
 _PUT /api/cats/{id}_
 _DELETE /api/cats/{id}_
-
+```
 ## Pagination
 _GET /api/cats/page/?pageNumber=1&pageSize=2
 
@@ -33,6 +34,7 @@ _GET /api/cats/page/?pageNumber=1&pageSize=2
 _http://localhost:5000/api/cats/?gender=male&color=black_
 
 ## Sample JSON Response
+```
  {
         "catId": 2,
         "name": "Jasper",
@@ -49,14 +51,15 @@ _http://localhost:5000/api/cats/?gender=male&color=black_
         "age": 5,
         "gender": "Male"
     }
-
+```
 ## Dog Http Request
+```
 _GET /api/dogs_
 _POST /api/dogs_
 _GET /api/dogs/{id}_
 _PUT /api/dogs/{id}_
 _DELETE /api/dogs/{id}_
-
+```
 ## Pagination
 _GET /api/dogs/page/?pageNumber=1&pageSize=2
 
@@ -75,6 +78,7 @@ _GET /api/dogs/page/?pageNumber=1&pageSize=2
 _http://localhost:5000/api/dogs/?age=6_
 
 ## Sample JSON Response
+```
 {
   "dogId": 6,
   "name": "Fido",
@@ -83,7 +87,7 @@ _http://localhost:5000/api/dogs/?age=6_
   "age": 6,
   "gender": "Female"
 }
-
+```
 
 
 ## Setup/Installation Requirements

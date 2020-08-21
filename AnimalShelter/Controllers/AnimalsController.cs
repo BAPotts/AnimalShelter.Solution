@@ -28,5 +28,11 @@ namespace AnimalShelter.Controllers
       _db.Animals.Add(animal);
       _db.SaveChanges();
     }
+
+    [HttpGet("{id}")] //GET api/animals/5
+    public ActionResult<Animal> Get(int id)
+    {
+      return _db.Animals.FirstOrDefault(entry => entry.AnimalId ==id);
+    }
   }
 }

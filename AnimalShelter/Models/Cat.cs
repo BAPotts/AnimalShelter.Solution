@@ -2,14 +2,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AnimalShelter.Models
 {
-  public class Animal
+  public class Cat
   {
-    public int AnimalId { get; set; }
+    public int CatId { get; set; }
     [Required]
     [StringLength(30, ErrorMessage = "Please enter a name under 30 characters.")]
     public string Name { get; set; }
     [Required]
-    public string Species { get; set; }
+    public string Color { get; set; }
     [Required]
     public string Breed { get; set; }
     [Required]

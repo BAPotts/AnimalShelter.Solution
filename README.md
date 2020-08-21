@@ -10,14 +10,17 @@ _Demonstrates API building process by creating two databases, one for dogs and o
 
 ## Cat Http Request
 ```
-_GET /api/cats_
-_POST /api/cats_
-_GET /api/cats/{id}_
-_PUT /api/cats/{id}_
-_DELETE /api/cats/{id}_
+GET /api/cats
+POST /api/cats
+GET /api/cats/{id}
+PUT /api/cats/{id}
+DELETE /api/cats/{id}
 ```
+
 ## Pagination
-_GET /api/cats/page/?pageNumber=1&pageSize=2
+```
+GET /api/cats/page/?pageNumber=1&pageSize=2
+```
 
 ## Cat Path Parameters
 
@@ -30,8 +33,9 @@ _GET /api/cats/page/?pageNumber=1&pageSize=2
 |gender|string|none|false|Return matches by gender.|
 
 ## Example Query
-
-_http://localhost:5000/api/cats/?gender=male&color=black_
+```
+http://localhost:5000/api/cats/?gender=male&color=black
+```
 
 ## Sample JSON Response
 ```
@@ -52,16 +56,20 @@ _http://localhost:5000/api/cats/?gender=male&color=black_
         "gender": "Male"
     }
 ```
+
 ## Dog Http Request
 ```
-_GET /api/dogs_
-_POST /api/dogs_
-_GET /api/dogs/{id}_
-_PUT /api/dogs/{id}_
-_DELETE /api/dogs/{id}_
+GET /api/dogs
+POST /api/dogs
+GET /api/dogs/{id}
+PUT /api/dogs/{id}
+DELETE /api/dogs/{id}
 ```
+
 ## Pagination
-_GET /api/dogs/page/?pageNumber=1&pageSize=2
+```
+GET /api/dogs/page/?pageNumber=1&pageSize=2
+```
 
 ## Dog Path Parameters
 
@@ -74,8 +82,9 @@ _GET /api/dogs/page/?pageNumber=1&pageSize=2
 |gender|string|none|false|Return matches by gender.|
 
 ## Example Query
-
-_http://localhost:5000/api/dogs/?age=6_
+```
+http://localhost:5000/api/dogs/?age=6
+```
 
 ## Sample JSON Response
 ```
@@ -89,14 +98,13 @@ _http://localhost:5000/api/dogs/?age=6_
 }
 ```
 
-
 ## Setup/Installation Requirements
 
 
   1. Follow this [link to the project repository](https://github.com/BAPotts/AnimalShelter.Solution.git) on GitHub. 
   2. Click on the "Clone or download" button to copy the project link.     
   3. If you are comfortable with the command line, you can copy the project link and clone it through your command line with the command `git clone`. Otherwise, I recommend choosing "**Download ZIP**".     
-   4. Once the ZIP file has finished downloading, you can right click on the file to view the zip folder in your downloads.     
+  4. Once the ZIP file has finished downloading, you can right click on the file to view the zip folder in your downloads.     
   5. Right click on the project ZIP folder that you have just downloaded and choose the option "**Copy To...**", then choose the location where you would like to save this folder.      
   6. Navigate to the final location where you have chosen to save the project folder.      
   7. To view the code itself, right click, choose "open with..." and open using a text editor such as VS Code or Atom, etc.

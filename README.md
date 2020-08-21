@@ -124,7 +124,7 @@ To populate a database:
 
 There are no known bugs at this time.
 
-## Support and Contact Details
+ ## :raising_hand: Support and Contact Details
 
 Feedback is greatly appreciated! Contact BAPotts on GitHub with any questions or comments.
 

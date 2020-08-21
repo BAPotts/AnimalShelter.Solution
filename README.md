@@ -76,12 +76,12 @@ _http://localhost:5000/api/dogs/?age=6_
 
 ## Sample JSON Response
 {
-    "dogId": 6,
-    "name": "Fido",
-    "color": "Tawny",
-    "breed": "Wolfhound",
-    "age": 6,
-    "gender": "Female"
+  "dogId": 6,
+  "name": "Fido",
+  "color": "Tawny",
+  "breed": "Wolfhound",
+  "age": 6,
+  "gender": "Female"
 }
 
 

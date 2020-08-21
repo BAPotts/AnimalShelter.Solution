@@ -114,7 +114,11 @@ http://localhost:5000/api/dogs/?age=6
   9. From inside of the AnimalShelter directory, type the command `dotnet restore` into your terminal and hit enter. You should see object files appear. They should be greyed out.
 
 ## Database Population
-To populate a database, delete the migrations folder and run dotnet ef migrations add Initial from the AnimalShelter folder. Then run dotnet ef database update.
+To populate a database:
+1. Delete the migrations folder.
+2. Navigate to AnimalShelter folder.
+3. Run `dotnet ef migrations add Initial` in the terminal.
+4. Then run `dotnet ef database update`.
 
 ## Known Bugs
 

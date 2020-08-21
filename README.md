@@ -15,6 +15,7 @@ POST /api/cats
 GET /api/cats/{id}
 PUT /api/cats/{id}
 DELETE /api/cats/{id}
+GET /api/cats/random (Return random cat object)
 ```
 
 ## Pagination
@@ -64,6 +65,7 @@ POST /api/dogs
 GET /api/dogs/{id}
 PUT /api/dogs/{id}
 DELETE /api/dogs/{id}
+GET /ap/dogs/random (return random dog object)
 ```
 
 ## Pagination

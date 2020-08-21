@@ -1,14 +1,14 @@
-# _Animal Shelter_
+# :paw_prints: _Animal Shelter_
 
 #### _C#/.Net SQL API Bulding Exercise for Epicodus, 08/21/2020_
 
-#### By _**Beverly Potts**_
+#### :pencil_2: By _**Beverly Potts**_
 
-## Description
+## :gem: Description
 
 _Demonstrates API building process by creating two databases, one for dogs and one for cats, seeding the data and providing routes To create, read, update and delete entries._
 
-## Cat Http Request
+## :cat: Cat Http Request
 ```
 GET /api/cats
 POST /api/cats
@@ -18,12 +18,12 @@ DELETE /api/cats/{id}
 GET /api/cats/random (Return random cat object)
 ```
 
-## Pagination
+## :cat: Pagination
 ```
 GET /api/cats/page/?pageNumber=1&pageSize=2
 ```
 
-## Cat Path Parameters
+## :cat: Cat Path Parameters
 
 | Parameter  |   Type   |  Default |  Required  | Description |
 |------|:------:|:------:|:------:|-------------:|
@@ -33,12 +33,12 @@ GET /api/cats/page/?pageNumber=1&pageSize=2
 |age|int|none|false|Return matches by age.|
 |gender|string|none|false|Return matches by gender.|
 
-## Example Query
+## :dart: Example Query
 ```
 http://localhost:5000/api/cats/?gender=male&color=black
 ```
 
-## Sample JSON Response
+## :dart: Sample JSON Response
 ```
  {
         "catId": 2,
@@ -58,7 +58,7 @@ http://localhost:5000/api/cats/?gender=male&color=black
     }
 ```
 
-## Dog Http Request
+## :dog: Dog Http Request
 ```
 GET /api/dogs
 POST /api/dogs
@@ -68,12 +68,12 @@ DELETE /api/dogs/{id}
 GET /ap/dogs/random (return random dog object)
 ```
 
-## Pagination
+## :dog: Pagination
 ```
 GET /api/dogs/page/?pageNumber=1&pageSize=2
 ```
 
-## Dog Path Parameters
+## :dog: Dog Path Parameters
 
 | Parameter  |   Type   |  Default |  Required  | Description |
 |------|:------:|:------:|:------:|-------------:|
@@ -83,12 +83,12 @@ GET /api/dogs/page/?pageNumber=1&pageSize=2
 |age|int|none|false|Return matches by age.|
 |gender|string|none|false|Return matches by gender.|
 
-## Example Query
+## :dart: Example Query
 ```
 http://localhost:5000/api/dogs/?age=6
 ```
 
-## Sample JSON Response
+## :dart: Sample JSON Response
 ```
 {
   "dogId": 6,
@@ -100,7 +100,7 @@ http://localhost:5000/api/dogs/?age=6
 }
 ```
 
-## Setup/Installation Requirements
+## :clipboard: Setup/Installation Requirements
 
 
   1. Follow this [link to the project repository](https://github.com/BAPotts/AnimalShelter.Solution.git) on GitHub. 
@@ -113,22 +113,22 @@ http://localhost:5000/api/dogs/?age=6
   8. Open the terminal inside of your text editor.
   9. From inside of the AnimalShelter directory, type the command `dotnet restore` into your terminal and hit enter. You should see object files appear. They should be greyed out.
 
-## Database Population
+## :card_index: Database Population
 To populate a database:
 1. Delete the migrations folder.
 2. Navigate to AnimalShelter folder.
 3. Run `dotnet ef migrations add Initial` in the terminal.
 4. Then run `dotnet ef database update`.
 
-## Known Bugs
+## :bug: Known Bugs
 
 There are no known bugs at this time.
 
- ## :raising_hand: Support and Contact Details
+## :raising_hand: Support and Contact Details
 
 Feedback is greatly appreciated! Contact BAPotts on GitHub with any questions or comments.
 
-## Technologies Used
+## :computer: Technologies Used
 
 * C# 
 * EntityFrameworkCore
@@ -138,7 +138,7 @@ Feedback is greatly appreciated! Contact BAPotts on GitHub with any questions or
 * GitHub
 * Sql Workbench 8.0
 
-### License
+### :scroll: License
 
 *This project is licensed under the MIT license.*
 

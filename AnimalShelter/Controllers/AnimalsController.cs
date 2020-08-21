@@ -17,6 +17,17 @@ namespace AnimalShelter.Controllers
       _db = db;
     }
 
+    [HttpGet("page")] //GET api/reviews/page/?pageNumber=1&pageSize=2
+    public ActionResult GetPages([FromQuery] UrlQuery urlQuery)
+    {
+      var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
+      var pagedData = _db.Animals
+                .OrderBy(animal => animal.AnimalId)
+                .Skip((validUrlQuery.PageNumber -1) * validUrlQuery.PageSize)
+                .Take(validUrlQuery.PageSize);
+      return Ok(pagedData);
+    }
+
     [HttpGet] //GET api/animals
     public ActionResult<IEnumerable<Animal>> Get(string name, string species, string breed, int? age, string gender)
     {

@@ -2,7 +2,7 @@
 
 #### _C#/.Net SQL API Bulding Exercise for Epicodus, 08/21/2020_
 
-#### :pencil_2: By _**Beverly Potts**_
+#### :pencil2: By _**Beverly Potts**_
 
 ## :gem: Description
 

@@ -81,6 +81,14 @@ namespace AnimalShelter.Controllers
       _db.SaveChanges();
     }
 
+    [HttpGet("random")]//GET api/dogs/random
+    public ActionResult<Dog> GetRandom()
+    {
+      System.Random random = new System.Random(); 
+      int id = random.Next(1,11);
+      return _db.Dogs.FirstOrDefault(entry => entry.DogId ==id);
+    }
+
     [HttpDelete("{id}")]//DELETE api/dogs/5
     public void Delete(int id)
     {

@@ -17,7 +17,7 @@ namespace AnimalShelter.Controllers
       _db = db;
     }
 
-    [HttpGet("page")] //GET api/dogs/page/?pageNumber=1&pageSize=2
+    [HttpGet("page")] //GET api/cats/page/?pageNumber=1&pageSize=2
     public ActionResult GetPages([FromQuery] UrlQuery urlQuery)
     {
       var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
@@ -70,6 +70,14 @@ namespace AnimalShelter.Controllers
     [HttpGet("{id}")] //GET api/cats/5
     public ActionResult<Cat> Get(int id)
     {
+      return _db.Cats.FirstOrDefault(entry => entry.CatId ==id);
+    }
+
+    [HttpGet("random")]//GET api/cats/random
+    public ActionResult<Cat> GetRandom()
+    {
+      System.Random random = new System.Random(); 
+      int id = random.Next(1,11);
       return _db.Cats.FirstOrDefault(entry => entry.CatId ==id);
     }
 
